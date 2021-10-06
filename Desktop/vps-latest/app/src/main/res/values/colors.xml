@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#46BBEB</color>
+    <color name="colorPrimaryDark">#46BBEB</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="create_ticket">#575757</color>
+    <color name="view_line">#E5E5E5</color>
+    <color name="mydevices_color">#313131</color>
+    <color name="ticket_color">#7C7D7D</color>
+    <color name="green">#54C456</color>
+    <color name="viewcolorText">#A9A9A9</color>
+    <color name="black">#000000</color>
+    <color name="toast_bg">#46CCB1</color>
+
+    <color name="searchBackground">#e0e0e0</color>
+    <color name="searchHint">#616161</color>
+    <color name="searchText">#212121</color>
+</resources>

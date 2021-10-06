@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/tv_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/service"
+            android:textColor="@color/create_ticket"
+            android:textSize="@dimen/_13sdp">
+
+        </TextView>
+
+        <RelativeLayout
+
+            android:id="@+id/rel_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_service"
+            android:layout_marginTop="@dimen/_5sdp">
+
+
+            <TextView
+                android:id="@+id/tv_please_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spinner_title"
+                android:textColor="@color/viewcolorText"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center_vertical"
+                android:visibility="gone"/>
+
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:dropDownWidth="@dimen/_270sdp"
+
+                />
+
+        </RelativeLayout>
+
+
+
+
+        <View
+            android:id="@+id/spinner_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/view_line"
+            android:layout_below="@+id/rel_spinner"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+
+        <TextView
+            android:id="@+id/tv_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/spinner_view"
+            android:text="@string/subject"
+            android:textColor="@color/create_ticket"
+            android:textSize="@dimen/_13sdp">
+
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/et_type_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tv_subject"
+            android:hint="Type subject"
+            android:background="@null"
+            android:textColor="@color/create_ticket"
+            android:textSize="@dimen/_12sdp">
+
+        </EditText>
+
+        <View
+            android:id="@+id/subject_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/view_line"
+            android:layout_below="@+id/et_type_subject"
+            android:layout_margin="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/subject_view"
+            android:text="@string/messagee"
+            android:textColor="@color/create_ticket"
+            android:textSize="@dimen/_13sdp">
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_type_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tv_message"
+            android:hint="@string/message"
+            android:background="@null"
+            android:textColor="@color/create_ticket"
+            android:textSize="@dimen/_12sdp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <View
+            android:id="@+id/message_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/view_line"
+            android:layout_below="@+id/et_type_desc"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_100sdp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rel_createTicket"
+            android:layout_alignTop="@+id/aa"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/uploadimage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/editimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editimage"
+                app:layout_constraintTop_toTopOf="@+id/uploadimage"
+                app:layout_constraintEnd_toEndOf="@+id/uploadimage" />
+
+            <ImageView
+                android:id="@+id/del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/deleteimage"
+                app:layout_constraintBottom_toBottomOf="@+id/uploadimage"
+                app:layout_constraintEnd_toEndOf="@+id/uploadimage" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/aa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_above="@+id/rel_createTicket"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+            <RelativeLayout
+                android:id="@+id/rel_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/attachment"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_file"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_below="@+id/rel_attachment"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_createTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+           android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginRight="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/login_screen"
+                android:gravity="center"
+                android:text="Submit Ticket"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/simpleProgressBarr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

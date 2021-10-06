@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_reinstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:text="@string/reinstallSystem"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_selectOperating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_below="@+id/tv_reinstall"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:text="@string/selectOperating"
+        android:textColor="@color/viewcolorText" />
+
+    <Spinner
+        android:id="@+id/spinnerReinstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/tv_selectOperating"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:dropDownWidth="@dimen/_270sdp"
+
+        />
+
+
+
+</RelativeLayout>

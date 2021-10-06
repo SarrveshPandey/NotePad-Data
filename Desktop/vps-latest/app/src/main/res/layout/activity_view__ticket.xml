@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.View_Ticket">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15sdp">
+
+        <RelativeLayout
+            android:id="@+id/rel_back_viewticket"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp">
+
+            <ImageView
+                android:id="@+id/iv_backk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_arrow_white">
+
+
+            </ImageView>
+        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="fghhgfh"
+                    android:textColor="#fff"
+                    android:textSize="18dp">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="300000"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:visibility="gone">
+
+
+                </TextView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/card_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Department:"
+                    android:textColor="@color/ticket_color"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Support Chat"
+                    android:textColor="@color/ticket_color"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_lastsupplier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Replier:"
+                    android:textColor="@color/ticket_color"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_lastreplier_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Client"
+                    android:textColor="@color/ticket_color"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Updated:"
+                    android:textColor="@color/ticket_color"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2 Days"
+                    android:textColor="@color/ticket_color"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ticket Status:"
+                    android:textColor="@color/ticket_color"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Pending Reply"
+                    android:textColor="@color/ticket_color"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_card"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/_10sdp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/_260sdp">
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+
+
+
+
+                <!--        <LinearLayout-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="@dimen/_240sdp"-->
+                <!--            android:background="@drawable/card_view"-->
+                <!--            android:layout_marginLeft="10dp"-->
+                <!--            android:layout_marginRight="10dp"-->
+                <!--            android:orientation="vertical">-->
+                <!--            <RelativeLayout-->
+
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginLeft="10dp"-->
+                <!--                android:layout_marginRight="10dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+                <!--                android:layout_centerVertical="true">-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tv_customer"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Custmoer Reply :"-->
+                <!--                    android:textSize="@dimen/_11sdp"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:textColor="@color/ticket_color">-->
+
+                <!--                </TextView>-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tv_replier_name"-->
+                <!--                    android:layout_toRightOf="@id/tv_customer"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Nick Rose"-->
+                <!--                    android:textSize="@dimen/_10sdp"-->
+                <!--                    android:layout_marginLeft="@dimen/_5sdp"-->
+                <!--                    android:textColor="#777373">-->
+
+                <!--                </TextView>-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tv_time"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="10:00am"-->
+                <!--                    android:textSize="@dimen/_9sdp"-->
+                <!--                    android:layout_alignParentRight="true"-->
+                <!--                    android:textColor="#A8A4A4">-->
+
+                <!--                </TextView>-->
+
+                <!--                <TextView-->
+
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="10/1/2020"-->
+                <!--                    android:textSize="@dimen/_9sdp"-->
+                <!--                    android:layout_toLeftOf="@+id/tv_time"-->
+                <!--                    android:textColor="#A8A4A4">-->
+
+                <!--                </TextView>-->
+
+
+                <!--            </RelativeLayout>-->
+
+                <!--            <View-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="1dp"-->
+                <!--                android:layout_marginLeft="10dp"-->
+                <!--                android:layout_marginRight="10dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+                <!--                android:background="@color/view_line">-->
+
+
+                <!--            </View>-->
+
+
+                <!--            <androidx.recyclerview.widget.RecyclerView-->
+                <!--                android:id="@+id/recycler_view_ticket"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:layout_marginTop="20dp"-->
+                <!--                android:layout_marginLeft="10dp"-->
+                <!--                android:layout_marginRight="10dp"/>-->
+
+
+                <!--&lt;!&ndash;            <EditText&ndash;&gt;-->
+                <!--&lt;!&ndash;                android:id="@+id/et_message"&ndash;&gt;-->
+                <!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;                android:layout_marginTop="20dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;                android:layout_marginLeft="10dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;                android:layout_marginRight="10dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;                android:textColor="@color/ticket_color"&ndash;&gt;-->
+                <!--&lt;!&ndash;                android:background="@null"&ndash;&gt;-->
+                <!--&lt;!&ndash;                android:textSize="@dimen/_11sdp"&ndash;&gt;-->
+                <!--&lt;!&ndash;                android:hint="sabadlkaldl;sldljafjsajfljs;afjjs;afkj;lsa;fj;saj;fj;sajf;jsafj;sajf;jsa;fj;sj;fjs;afj;lsj;fj;sjf;jsfj;lsajfjsafj;saj;fj;asjf;js;fj;sajfjs;ajf;sja;fj;safj;lsjf;jsajfs;afj;sajf;jsaf;j;l">&ndash;&gt;-->
+
+
+                <!--&lt;!&ndash;            </EditText>&ndash;&gt;-->
+
+
+                <!--        </LinearLayout>-->
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/rel_view_ticketBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_customer"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_view"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_reply"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ticket Reply"
+                            android:textColor="#000"
+
+                            android:textSize="@dimen/_12sdp">
+
+                        </TextView>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_reply"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_reply"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:background="@null"
+                            android:hint="Type Reply"
+                            android:maxLines="3"
+                            android:textColor="#777373"
+                            android:textSize="@dimen/_11sdp">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="@dimen/_13sdp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/view_line">
+
+
+                    </View>
+
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/uploadimage1"
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:visibility="gone"/>
+
+                            <ImageView
+                                android:id="@+id/editimage1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/editimage"
+                                app:layout_constraintBottom_toTopOf="@+id/uploadimage1"
+                                app:layout_constraintEnd_toEndOf="@+id/uploadimage1"
+                                app:layout_constraintStart_toEndOf="@+id/uploadimage1"
+                                app:layout_constraintTop_toTopOf="@+id/uploadimage1"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:visibility="gone"/>
+
+                            <ImageView
+                                android:id="@+id/del1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/deleteimage"
+                                app:layout_constraintBottom_toBottomOf="@+id/uploadimage1"
+                                app:layout_constraintEnd_toEndOf="@+id/uploadimage1"
+                                app:layout_constraintStart_toEndOf="@+id/uploadimage1"
+                                app:layout_constraintTop_toBottomOf="@+id/uploadimage1"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:visibility="gone"/>
+
+
+                            <ImageView
+                                android:id="@+id/iv_attach"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/attachment"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"/>
+
+
+                            <TextView
+                                android:id="@+id/txtattach"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:layout_toRightOf="@id/iv_attach"
+                                android:text="Add file attachement"
+                                android:textColor="#A39D9D"
+                                android:textSize="@dimen/_9sdp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toRightOf="@id/iv_attach"/>
+
+                            <TextView
+                                android:id="@+id/tv_createTicket"
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/login_screen"
+                                android:gravity="center"
+                                android:clickable="false"
+                                android:text="Create Reply"
+                                android:textColor="#F4F2F2"
+                                android:textSize="@dimen/_13sdp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/simpleProgressBarr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

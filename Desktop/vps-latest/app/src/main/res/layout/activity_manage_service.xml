@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ManageService">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rel_back_service"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_30sdp">
+
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/back_arrow_white"></ImageView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/manageservice"
+                android:textColor="#fff"
+                android:textSize="@dimen/_15sdp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_card_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rel_manage"
+        android:layout_below="@id/toolbar">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            tools:ignore="UselessParent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/rel_manageservice"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:id="@+id/tv_service_detail"
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:text="@string/serviceDetail"
+                            android:visibility="visible" />
+
+
+                        <TextView
+                            android:id="@+id/tv_graph"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv_service_detail"
+                            android:gravity="center"
+                            android:text="@string/graphs"
+                            android:visibility="visible">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_access"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv_graph"
+                            android:gravity="center"
+                            android:text="@string/access"
+                            android:visibility="visible">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_power"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv_access"
+                            android:gravity="center"
+                            android:text="@string/power"
+                            android:visibility="visible">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_networking"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv_power"
+                            android:gravity="center"
+                            android:text="@string/networking"
+                            android:visibility="visible">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_reinstall"
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv_networking"
+                            android:gravity="center"
+                            android:text="@string/reinstall"
+                            android:visibility="visible">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_recovery"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv_reinstall"
+                            android:gravity="center"
+                            android:text="@string/recovery"
+                            android:visibility="visible">
+
+                        </TextView>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_card_manage"
+        android:layout_margin="@dimen/_15sdp"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/manage_service_background"
+            android:visibility="gone">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameAccess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/manage_service_background"
+            android:visibility="gone">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framePower"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/manage_service_background"
+            android:visibility="gone">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framegraph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frameAccess"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:visibility="gone">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framegraphImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/framegraph"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/manage_service_background"
+            android:visibility="gone">
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/simpleProgressBarr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

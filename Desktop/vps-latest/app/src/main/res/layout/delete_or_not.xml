@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_105sdp"
+        android:background="@drawable/manage_service_background"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_folderre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+           android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:id="@+id/tv_scriptDeletee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:text="VPS wants you to open Browser.">
+
+            </TextView>
+
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_below="@id/rl_folderre"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/view_line">
+
+        </View>
+        <View
+
+            android:layout_below="@id/rl_folderre"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/view_line">
+
+        </View>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_folderrr"
+            android:layout_below="@id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:id="@+id/tv_cancell"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Cancel"
+                        android:gravity="center"
+                        android:textSize="@dimen/_14ssp"
+                        android:textColor="@color/colorPrimary">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_okay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Open"
+                        android:gravity="center"
+
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/_14ssp"
+                        android:textColor="@color/colorPrimary">
+
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
